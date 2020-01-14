@@ -19,7 +19,7 @@ db.json`.
 ## Build a simple, Event-driven, JavaScript DOM-modifying application
 
 * Populate page with quotes with a `GET` request to
-  `http://localhost:3000/quotes?_embed=likes`. The query string in this URL tells 
+  `http://localhost:3000/quotes?_embed=likes`. The query string in this URL tells
   `json-server` to include the likes for a quote in the JSON of the response. You
   should not use this query string when creating or deleting a quote.
 
@@ -49,8 +49,8 @@ db.json`.
   * The body of the request should be a JSON object containing a key of
     `quoteId`, with an _integer_ value. Use the ID of the quote you're creating
     the like for — e.g. `{ quoteId: 5 }` to create a like for quote 5. IMPORTANT: 
-    if the `quoteID` is a string for some reason (for example, if you've pulled 
-    the ID from a dataset) the index page will not include the like you 
+    if the `quoteID` is a string for some reason (for example, if you've pulled
+    the ID from a dataset) the index page will not include the like you
     create on _any_ quote.
   * Bonus (not required): add a `createdAt` key to your object to track when
     the like was created. Use [UNIX time][] (the number of seconds since
